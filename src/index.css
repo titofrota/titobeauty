@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,109 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ------------------ HEADER -------------------- */
+header {
+  /* background-color: #C07574;
+  background-size: 100%; */
+  background: url("oblobs.png"), #C07574;
+  height: 23vw;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+header div.title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 12vw;
+  align-items: center;
+  height: 50%;
+}
+
+header div.slogan {
+  font-size: 1vw;
+}
+
+header div.head {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* ---------------------- MAIN -------------------- */
+main{
+  background: rgb(192,117,116);
+  background: linear-gradient(315deg, rgba(192,117,116,1) 0%, rgba(213,184,184,1) 35%, rgba(216,170,170,1) 100%);
+  padding-bottom: 10vh;
+}
+
+.products{
+  height: 25vw;
+}
+
+.form-control {
+  text-align: left;
+}
+
+.btn-register{
+  align-self: center;
+}
+
+
+/* ------------------- FOOTER ---------------------- */
+footer {
+  background:#C07574;
+  color: #fff;
+  padding: 10px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+footer ul {
+  
+  list-style: none;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+footer ul li a {
+  color: #eee;
+}
+
+/* -------------- RESPONSIVITY ----------------- */
+@media (max-width:950px) and (min-width:0px) {
+  header{
+    height: 45vw;
+  }
+
+  header div.title{
+    font-size: 20vw;
+  }
+
+  header div.slogan{
+    font-size: 3vw;
+  }
+
+  .products{
+    height: 35vh;
+    width: 95vw;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+
+  footer {
+    text-align: center;
+    grid-template-columns:1fr;
+  }
+  footer ul li a {
+ font-size: 1.8rem;
+  }
 }
